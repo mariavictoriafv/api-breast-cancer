@@ -7,7 +7,7 @@ import joblib
 app = FastAPI(title="API de Classificação de Câncer de Mama")
 
 # Carregar o modelo salvo
-artefato = joblib.load("modelo_breast.joblib")
+artefato = joblib.load("model_breast.joblib")
 
 modelo = artefato["modelo"]
 colunas = artefato["colunas"]
